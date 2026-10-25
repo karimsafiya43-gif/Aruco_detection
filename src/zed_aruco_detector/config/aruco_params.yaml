@@ -1,0 +1,30 @@
+zed_aruco_depth_node:
+  ros__parameters:
+    # Physical side length of the ArUco marker, in metres
+    marker_size: 0.184
+
+    # OpenCV ArUco dictionary
+    dictionary: "DICT_4X4_50"
+
+    # Display the detected markers in an OpenCV window
+    show_window: true
+
+    # ZED 2i topics
+    rgb_topic: "/zed/zed_node/rgb/color/rect/image"
+    depth_topic: "/zed/zed_node/depth/depth_registered"
+    camera_info_topic: "/zed/zed_node/rgb/color/rect/camera_info"
+
+    # Approximate synchronization tolerance, seconds
+    sync_slop: 0.10
+
+    # Minimum number of valid depth pixels inside the marker
+    min_valid_depth_pixels: 5
+
+    # Maximum allowed reprojection error, pixels
+    max_reprojection_error: 2.0
+
+    # Maximum accepted distance, metres
+    max_range: 10.0
+
+    # Print diagnostic measurements every N frames
+    log_every_n_frames: 10

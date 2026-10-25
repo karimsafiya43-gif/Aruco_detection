@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>zed_aruco_detector</name>
+  <version>0.0.1</version>
+  <description>
+    ArUco marker detection, IPPE pose estimation,
+    and ZED registered depth comparison.
+  </description>
+
+  <maintainer email="user@example.com">ros2_user</maintainer>
+  <license>Apache-2.0</license>
+
+  <buildtool_depend>ament_python</buildtool_depend>
+
+  <exec_depend>rclpy</exec_depend>
+  <exec_depend>sensor_msgs</exec_depend>
+  <exec_depend>geometry_msgs</exec_depend>
+  <exec_depend>std_msgs</exec_depend>
+  <exec_depend>cv_bridge</exec_depend>
+  <exec_depend>message_filters</exec_depend>
+
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+  <test_depend>python3-pytest</test_depend>
+
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
+</package>
+
